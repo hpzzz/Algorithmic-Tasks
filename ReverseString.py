@@ -1,4 +1,4 @@
-class Solution:
+class PascalTree:
     def generate(self, numRows: int):
         triangle = []
         for rowNum in range(numRows):
