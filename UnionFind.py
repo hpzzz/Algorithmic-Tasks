@@ -27,13 +27,3 @@ class UnionFind:
         else:
             self.id[rootOfQ] = rootOfP
             self.size[rootOfP] += self.size[rootOfQ]
-testUnion = UnionFind(10)
-testUnion.union(0, 3)
-testUnion.union(1,3)
-testUnion.union(2,4)
-testUnion.union(3, 2)
-testUnion.union(6,4)
-testUnion.union(7,4)
-
-
-print(testUnion.rootOf(7))

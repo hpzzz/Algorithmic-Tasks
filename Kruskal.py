@@ -39,6 +39,15 @@ class Edge:
         self.source = source
         self.destination = destination
         self.weight = sqrt(((source.x - destination.x) ** 2) + (((source.y - destination.y) ** 2)))
+    
+    def from_vortex(self):
+        return self.source
+    
+    def to_vortex(self):
+        return self.destination
+
+    def weight(self):
+        return self.weight
 
     def __str__(self):
         return ("{s} -- {d} == {w:.2f}".format(s=self.source.id, d=self.destination.id, w=self.weight))
